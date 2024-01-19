@@ -68,31 +68,13 @@ merged_df = merge_data(load, temp)
 # Swap missing data
 sf_columns = [
     'KCASANFR698_Temperature', 'KCASANFR698_Dew_Point', 'KCASANFR698_Humidity',
-    'KCASANFR698_Speed', 'KCASANFR698_Gust', 'KCASANFR698_Pressure'
-]
+    'KCASANFR698_Speed', 'KCASANFR698_Gust', 'KCASANFR698_Pressure']
 sj_columns = [
     'KCASANJO17_Temperature', 'KCASANJO17_Dew_Point', 'KCASANJO17_Humidity',
-    'KCASANJO17_Speed', 'KCASANJO17_Gust', 'KCASANJO17_Pressure'
-]
+    'KCASANJO17_Speed', 'KCASANJO17_Gust', 'KCASANJO17_Pressure']
+
 merged_df = swap_missing_data(merged_df, sf_columns, sj_columns)
 
 # Interpolate missing values
 daylight_savings_dates = [pd.to_datetime('2021-03-14'), pd.to_datetime('2022-03-13'), pd.to_datetime('2023-03-12')]
 merged_df = interpolate_missing_values(merged_df, daylight_savings_dates)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
