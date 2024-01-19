@@ -58,8 +58,9 @@ def interpolate_missing_values(df, exclude_dates):
     return result_df
 
 # Example usage
-load_dir = 'C:/Users/groutgauss/Machine_Learning_Projects/caiso-data-downloader/'
-temp_dir = 'C:/Users/groutgauss/Machine_Learning_Projects/weather-data-scraper/'
+#update with local path to data after running weather-data-scrapper and caiso-load-downloader locally
+load_dir = 'C:/Users/~/~/~/'
+temp_dir = 'C:/Users/~/~/~/'
 
 load, temp = import_data(load_dir, temp_dir)
 merged_df = merge_data(load, temp)
