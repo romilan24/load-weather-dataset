@@ -1,4 +1,4 @@
-This data was generated using a forks of https://github.com/Karlheinzniebuhr/the-weather-scraper and https://github.com/jikaczmarski/caiso-data-downloader.  Adjustments were made to aggregate 5-minute interval data to hourly averages and then scrubbed using the preprocessing.py script attached.
+This data was generated using a forks of https://github.com/Karlheinzniebuhr/the-weather-scraper and https://github.com/jikaczmarski/caiso-data-downloader.  Adjustments were made to aggregate 5-minute interval data to hourly averages and then scrubbed using the preprocess.py script attached.
 
 **Assumptions**
 - Using weather stations KCASANFR698, KCASANJO17, KCABAKER271, KCAELSEG23, KCARIVER117 to serve as represetation of major load serving areas in CAISO
